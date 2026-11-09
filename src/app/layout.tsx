@@ -32,13 +32,15 @@ const grotesk = Space_Grotesk({
   weight: ["500", "600", "700"],
 });
 
+const basePath = process.env.EXPORT_MODE === "gh-pages" ? "/typeflow" : "";
+
 export const metadata: Metadata = {
   title: "TypeFlow — Typing Practice & Speed Test",
   description:
     "A beautiful, local-first typing trainer. Time, words, quotes, real-world sentences, zen & custom modes, live charts, per-key heatmaps and 15 themes. No login required.",
   keywords: ["typing test", "typing speed", "wpm", "monkeytype", "typing practice", "keyboard"],
   icons: {
-    icon: "/logo.svg",
+    icon: `${basePath}/logo.svg`,
   },
 };
 

@@ -21,14 +21,18 @@
 
 ## 🚀 Live Demo
 
-> **TODO:** After you deploy (see below), replace this line with your real link, e.g.
-> **Try it live: <https://prime-programmer-ar.github.io/typeflow/>** (or your Vercel URL)
+**Try it live: <https://prime-programmer-ar.github.io/typeflow/>**
 
-The easiest way to get a public URL is the one-click deploy button:
+Hosted on GitHub Pages from the `gh-pages` branch (static export with `EXPORT_MODE=gh-pages`). To rebuild the live site after changes, run:
+
+```bash
+EXPORT_MODE=gh-pages bun run build     # output in out/
+git subtree push --prefix out origin gh-pages   # or use a GitHub Actions workflow
+```
+
+Prefer a Node host? The one-click deploy also works:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fprime-programmer-ar%2Ftypeflow)
-
-(For GitHub Pages, the app needs a static export — a Vercel/Netlify deploy works out of the box with this Next.js project.)
 
 ## ✨ Features
 
